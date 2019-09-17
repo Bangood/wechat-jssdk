@@ -23,7 +23,7 @@
             // }, 5000);
             wx.config({
                 debug: false,
-                appId: 'wxb7289add5eeccd94',
+                appId: 'wxa3b2c9317c0b65d6',
                 timestamp: info.timestamp,
                 nonceStr: info.nonceStr,
                 signature: info.signature,
