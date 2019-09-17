@@ -22,7 +22,7 @@
             var shareInfo = {
                 title: '川航美食研究所',
                 desc: '描述',
-                link: 'http://rs2.mgapp.com.cn/091701/web-mobile/index.html',
+                link: 'http://rs2.mgapp.com.cn/091702/web-mobile/index.html',
                 imgUrl: 'https://avatars3.githubusercontent.com/u/5388012?v=3&u=0981ddbccf0ffbb794cddd65ea12c212a9d5e93b&s=140',
             };
 
