@@ -11,7 +11,7 @@
             setTimeout(() => {
                 wx.config({
                     debug: false,
-                    appId: wxb7289add5eeccd94,
+                    appId: 'wxb7289add5eeccd94',
                     timestamp: info.timestamp,
                     nonceStr: info.nonceStr,
                     signature: info.signature,
