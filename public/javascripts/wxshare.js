@@ -7,7 +7,7 @@
     var wxshare = function(){
         if('wx' in window){
             
-            var info = JSON.parse(document.getElementById('info').innerHTML);
+            // var info = JSON.parse(document.getElementById('info').innerHTML);
 
             wx.config({
                 debug: false, 
