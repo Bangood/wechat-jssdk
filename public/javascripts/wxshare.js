@@ -7,14 +7,14 @@
     var wxshare = function () {
         if ('wx' in window) {
 
-            // var info = JSON.parse(document.getElementById('info').innerHTML);
+            var info = JSON.parse(document.getElementById('info').innerHTML);
             setTimeout(() => {
                 wx.config({
                     debug: false,
-                    appId: window.pure.appid,
-                    timestamp: window.pure.sign.timestamp,
-                    nonceStr: window.pure.sign.nonceStr,
-                    signature: window.pure.sign.signature,
+                    appId: wxb7289add5eeccd94,
+                    timestamp: info.timestamp,
+                    nonceStr: info.nonceStr,
+                    signature: info.signature,
                     jsApiList: ['onMenuShareTimeline', 'onMenuShareAppMessage', 'onMenuShareQQ', 'onMenuShareWeibo', 'onMenuShareQZone']
                 });
 
