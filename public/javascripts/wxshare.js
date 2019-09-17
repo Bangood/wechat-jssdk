@@ -8,24 +8,31 @@
         if ('wx' in window) {
 
             var info = JSON.parse(document.getElementById('info').innerHTML);
-            setTimeout(() => {
-                wx.config({
-                    debug: false,
-                    appId: 'wxb7289add5eeccd94',
-                    timestamp: info.timestamp,
-                    nonceStr: info.nonceStr,
-                    signature: info.signature,
-                    jsApiList: ['onMenuShareTimeline', 'onMenuShareAppMessage', 'onMenuShareQQ', 'onMenuShareWeibo', 'onMenuShareQZone']
-                });
+            // setTimeout(() => {
+            //     wx.config({
+            //         debug: false,
+            //         appId: 'wxb7289add5eeccd94',
+            //         timestamp: info.timestamp,
+            //         nonceStr: info.nonceStr,
+            //         signature: info.signature,
+            //         jsApiList: ['onMenuShareTimeline', 'onMenuShareAppMessage', 'onMenuShareQQ', 'onMenuShareWeibo', 'onMenuShareQZone']
+            //     });
 
-                // 分享内容自定义
+            //     // 分享内容自定义
                
-            }, 5000);
-
+            // }, 5000);
+            wx.config({
+                debug: false,
+                appId: 'wxb7289add5eeccd94',
+                timestamp: info.timestamp,
+                nonceStr: info.nonceStr,
+                signature: info.signature,
+                jsApiList: ['onMenuShareTimeline', 'onMenuShareAppMessage', 'onMenuShareQQ', 'onMenuShareWeibo', 'onMenuShareQZone']
+            });
             var shareInfo = {
                 title: '川航美食研究所',
                 desc: '描述',
-                link: 'm.mgapp.com.cn',
+                link: 'http://m.mgapp.com.cn/',
                 imgUrl: 'https://avatars3.githubusercontent.com/u/5388012?v=3&u=0981ddbccf0ffbb794cddd65ea12c212a9d5e93b&s=140',
             };
             wx.ready(function () {
