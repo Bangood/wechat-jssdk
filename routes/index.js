@@ -57,7 +57,7 @@ var getTiket = function (res, url) {
         //   appid: APPID,
         //   sign: JSON.stringify(sign(cache.jsapi_ticket,url))
         // });
-        res.json({ appid: APPID, sign: JSON.stringify(sign(cache.jsapi_ticket, url)) });
+        res.json({ appid: APPID, sign: sign(cache.jsapi_ticket, url) });
       }
     });
   } else {
@@ -66,7 +66,7 @@ var getTiket = function (res, url) {
     //   appid: APPID,
     //   sign: JSON.stringify(sign(cache.jsapi_ticket,url))
     // });
-    res.json({ appid: APPID, sign: JSON.stringify(sign(cache.jsapi_ticket, url)) });
+    res.json({ appid: APPID, sign: sign(cache.jsapi_ticket, url) });
   }
 };
 

@@ -11,18 +11,18 @@
 
             wx.config({
                 debug: false, 
-                appId: 'wxb7289add5eeccd94',
-                timestamp: info.timestamp, 
-                nonceStr: info.nonceStr, 
-                signature: info.signature,
+                appId: window.pure.appid,
+                timestamp: window.pure.sign.timestamp, 
+                nonceStr: window.pure.sign.nonceStr, 
+                signature: window.pure.sign.signature,
                 jsApiList: ['onMenuShareTimeline', 'onMenuShareAppMessage', 'onMenuShareQQ', 'onMenuShareWeibo', 'onMenuShareQZone'] 
             });
 
             // 分享内容自定义
             var shareInfo = {
-                title: '分享标题',
+                title: '川航美食研究所',
                 desc: '描述',
-                link: 'www.baidu.com',
+                link: 'http://rs2.mgapp.com.cn/091701/web-mobile/index.html',
                 imgUrl: 'https://avatars3.githubusercontent.com/u/5388012?v=3&u=0981ddbccf0ffbb794cddd65ea12c212a9d5e93b&s=140',
             };
 
@@ -46,11 +46,11 @@
                     link: shareInfo.link,
                     imgUrl: shareInfo.imgUrl,
                     success: function() {
-                        alert('11111');
+                        // alert('11111');
 
                     },
                     cancel: function() {
-                        alert('2222222');
+                        // alert('2222222');
 
                     }
                 });
@@ -61,11 +61,11 @@
                     link: shareInfo.link,
                     imgUrl: shareInfo.imgUrl,
                     success: function() {
-                        alert('qqqqqqqqq11111');
+                        // alert('qqqqqqqqq11111');
 
                     },
                     cancel: function() {
-                        alert('qqqqqqqqq12222');
+                        // alert('qqqqqqqqq12222');
                     }
                 });
                 //分享到腾讯微博
