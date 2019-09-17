@@ -58,9 +58,9 @@
     <p><%= appid %></p><br><span id="info"><%- sign %></span>
   </div>
 
-  <script src="http://rs2.mgapp.com.cn/091702/web-mobile/src/settings.js" charset="utf-8"></script>
+  <script src="http://m.mgapp.com.cn/src/settings.js" charset="utf-8"></script>
 
-  <script src="/main.js" charset="utf-8"></script>
+  <script src="http://m.mgapp.com.cn/main.js" charset="utf-8"></script>
   <script src="https://cdn.staticfile.org/axios/0.19.0-beta.1/axios.min.js"></script>
 
   <script type="text/javascript">
@@ -75,7 +75,7 @@
 
       var cocos2d = document.createElement('script');
       cocos2d.async = true;
-      cocos2d.src = window._CCSettings.debug ? 'cocos2d-js.js' : 'cocos2d-js-min.js';
+      cocos2d.src = window._CCSettings.debug ? 'http://m.mgapp.com.cn/cocos2d-js.js' : 'http://m.mgapp.com.cn/cocos2d-js-min.js';
 
       var engineLoaded = function () {
         document.body.removeChild(cocos2d);
@@ -86,19 +86,19 @@
       cocos2d.addEventListener('load', engineLoaded, false);
       document.body.appendChild(cocos2d);
     })();
-    // axios.get('http://m.mgapp.com.cn/')
-    //   .then(res => {
-    //     console.log('--res')
-    //     console.log(res);
-    //     window.pure = res.data;
-    //   })
-    //   .catch(error => {
-    //     console.log('--error');
-    //     console.log(error)
-    //   })
-    //   .finally(() => {
+    axios.get('http://m.mgapp.com.cn/')
+      .then(res => {
+        console.log('--res')
+        console.log(res);
+        window.pure = res.data;
+      })
+      .catch(error => {
+        console.log('--error');
+        console.log(error)
+      })
+      .finally(() => {
 
-    //   });
+      });
   </script>
   <script src="http://m.mgapp.com.cn/javascripts/jweixin-1.4.0.js"></script>
   <script src="http://m.mgapp.com.cn/javascripts/wxshare.js"></script>
