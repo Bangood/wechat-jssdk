@@ -19,15 +19,15 @@
                 });
 
                 // 分享内容自定义
-                var shareInfo = {
-                    title: '川航美食研究所',
-                    desc: '描述',
-                    link: 'http://rs2.mgapp.com.cn/091702/web-mobile/index.html',
-                    imgUrl: 'https://avatars3.githubusercontent.com/u/5388012?v=3&u=0981ddbccf0ffbb794cddd65ea12c212a9d5e93b&s=140',
-                };
+               
             }, 5000);
 
-
+            var shareInfo = {
+                title: '川航美食研究所',
+                desc: '描述',
+                link: 'm.mgapp.com.cn',
+                imgUrl: 'https://avatars3.githubusercontent.com/u/5388012?v=3&u=0981ddbccf0ffbb794cddd65ea12c212a9d5e93b&s=140',
+            };
             wx.ready(function () {
                 //分享到朋友圈
                 wx.onMenuShareTimeline({
