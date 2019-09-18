@@ -31,9 +31,9 @@
             });
             var shareInfo = {
                 title: '川航美食研究所',
-                desc: '描述',
+                desc: '川航美食研究所，不一样的飞机餐，快来测下你的美食偏好吧',
                 link: 'http://m.mgapp.com.cn/',
-                imgUrl: 'https://avatars3.githubusercontent.com/u/5388012?v=3&u=0981ddbccf0ffbb794cddd65ea12c212a9d5e93b&s=140',
+                imgUrl: 'http://rs2.mgapp.com.cn/%E9%93%BE%E6%8E%A5%E5%9B%BE.png',
             };
             wx.ready(function () {
                 //分享到朋友圈
