@@ -169,7 +169,9 @@ window.boot = function () {
 
     // init assets
     cc.AssetLibrary.init({
-        libraryPath: 'http://rs2.mgapp.com.cn/091702/web-mobile/res/import',
+        // libraryPath: 'http://rs2.mgapp.com.cn/091703/web-mobile/res/import',
+        libraryPath: 'res/import',
+        // rawAssetsBase: 'http://rs2.mgapp.com.cn/091703/web-mobile/res/raw-',
         rawAssetsBase: 'res/raw-',
         rawAssets: settings.rawAssets,
         packedAssets: settings.packedAssets,
@@ -220,3 +222,22 @@ else if (window.jsb) {
     cc.macro.CLEANUP_IMAGE_CACHE = true;
     window.boot();
 }
+
+// Begin Cocos Analytics
+(function () {
+  if ((typeof cocosAnalytics) !== 'undefined'){
+    var initArgs = {
+      appID: '687725490',
+      storeID: 'bangood',
+      engine: 'cocos',
+      callNumber: ''
+    };
+    if (!initArgs.appID || !initArgs.storeID) {
+      console.error('请在编辑器设置好 Cocos Analytics 的 appID 和 storeID');
+      return;
+    }
+    cocosAnalytics.init(initArgs);
+  }
+})();
+// End Cocos Analytics
+    
