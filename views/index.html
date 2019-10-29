@@ -87,19 +87,19 @@
       cocos2d.addEventListener('load', engineLoaded, false);
       document.body.appendChild(cocos2d);
     })();
-    axios.get('http://hi.sichuanair.com/')
-      .then(res => {
-        console.log('--res')
-        console.log(res);
-        window.pure = res.data;
-      })
-      .catch(error => {
-        console.log('--error');
-        console.log(error)
-      })
-      .finally(() => {
+    // axios.get('http://hi.sichuanair.com/')
+    //   .then(res => {
+    //     console.log('--res')
+    //     console.log(res);
+    //     window.pure = res.data;
+    //   })
+    //   .catch(error => {
+    //     console.log('--error');
+    //     console.log(error)
+    //   })
+    //   .finally(() => {
 
-      });
+    //   });
   </script>
   <script src="/javascripts/jweixin-1.4.0.js"></script>
   <script src="/javascripts/wxshare.js"></script>
