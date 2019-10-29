@@ -39,7 +39,6 @@
   <!--<link rel="apple-touch-icon-precomposed" href=".png" />-->
 
   <link rel="stylesheet" type="text/css" href="style-mobile.css" />
-
 </head>
 
 <body>
@@ -59,6 +58,8 @@
   </div>
 
   <script src="/src/settings.js" charset="utf-8"></script>
+
+  <script src="https://download.cocos.com/CocosAnalytics/sdk/cocosAnalytics.min.2.1.0.js" charset="utf-8"></script>
 
   <script src="/main.js" charset="utf-8"></script>
   <script src="https://cdn.staticfile.org/axios/0.19.0-beta.1/axios.min.js"></script>
@@ -86,7 +87,7 @@
       cocos2d.addEventListener('load', engineLoaded, false);
       document.body.appendChild(cocos2d);
     })();
-    axios.get('http://m.mgapp.com.cn/')
+    axios.get('http://hi.sichuanair.com/')
       .then(res => {
         console.log('--res')
         console.log(res);
