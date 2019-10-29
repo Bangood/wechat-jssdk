@@ -32,8 +32,8 @@
             var shareInfo = {
                 title: '川航美食研究所',
                 desc: '川航美食研究所，不一样的飞机餐，快来测下你的美食偏好吧',
-                link: 'http://m.mgapp.com.cn/',
-                imgUrl: 'http://rs2.mgapp.com.cn/%E9%93%BE%E6%8E%A5%E5%9B%BE.png',
+                link: 'http://hi.sichuanair.com/',
+                imgUrl: 'http://hi.sichuanair.com/link.png',
             };
             wx.ready(function () {
                 //分享到朋友圈
