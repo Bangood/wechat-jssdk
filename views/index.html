@@ -57,11 +57,11 @@
     <p><%= appid %></p><br><span id="info"><%- sign %></span>
   </div>
 
-  <script src="/src/settings.js" charset="utf-8"></script>
+  <script src="./src/settings.js" charset="utf-8"></script>
 
   <script src="https://download.cocos.com/CocosAnalytics/sdk/cocosAnalytics.min.2.1.0.js" charset="utf-8"></script>
 
-  <script src="/main.js" charset="utf-8"></script>
+  <script src="./main.js" charset="utf-8"></script>
   <script src="https://cdn.staticfile.org/axios/0.19.0-beta.1/axios.min.js"></script>
 
   <script type="text/javascript">
@@ -76,7 +76,7 @@
 
       var cocos2d = document.createElement('script');
       cocos2d.async = true;
-      cocos2d.src = window._CCSettings.debug ? '/cocos2d-js.js' : '/cocos2d-js-min.js';
+      cocos2d.src = window._CCSettings.debug ? './cocos2d-js.js' : './cocos2d-js-min.js';
 
       var engineLoaded = function () {
         document.body.removeChild(cocos2d);
@@ -87,7 +87,7 @@
       cocos2d.addEventListener('load', engineLoaded, false);
       document.body.appendChild(cocos2d);
     })();
-    // axios.get('http://hi.sichuanair.com/')
+    // axios.get('http://m.mgapp.com.cn/')
     //   .then(res => {
     //     console.log('--res')
     //     console.log(res);
@@ -101,8 +101,8 @@
 
     //   });
   </script>
-  <script src="/javascripts/jweixin-1.4.0.js"></script>
-  <script src="/javascripts/wxshare.js"></script>
+  <script src="./javascripts/jweixin-1.4.0.js"></script>
+  <script src="./javascripts/wxshare.js"></script>
 </body>
 
 </html>
